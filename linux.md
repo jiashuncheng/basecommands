@@ -17,3 +17,8 @@ sudo rm /etc/cups/subscriptions.conf*
 sudo rm -r /var/cache/cups
 sudo service cups start
 ```
+
+## kill name include xxxx
+```
+ps -ef | grep xxxx | grep -v grep | awk '{print $2}' | xargs kill -9
+```
